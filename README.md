@@ -86,7 +86,7 @@ These two words look almost identical and mean genuinely different things. The d
 
 An analogy: you are seating strangers in a row of nine chairs, with a rule that nobody may sit next to anyone else. Filling seats 1, 3, 5, 7, and 9 is maximum, since 5 people is the best possible. Filling seats 2, 5, and 8 instead is maximal, because no remaining seat is legal, but it only fits 3 people. Both arrangements are stuck, and only one is optimal.
 
-## What Does "Large" Mean?
+### What Does "Large" Mean?
 
 Ideally we would want the maximum set. But as noted above, computing the true maximum is very difficult to do in polynomial time, which is the informal cutoff for "fast enough to be practical."
 
