@@ -1,0 +1,6 @@
+# Compiled Java class files
+*.class
+
+# macOS / Windows junk
+.DS_Store
+Thumbs.db
