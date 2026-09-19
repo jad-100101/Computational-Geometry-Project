@@ -88,7 +88,7 @@ An analogy: you are seating strangers in a row of nine chairs, with a rule that 
 
 ### What Does "Large" Mean?
 
-Ideally we would want the maximum set. But as noted above, computing the true maximum is very difficult to do in polynomial time, which is the informal cutoff for "fast enough to be practical."
+Ideally we would want the maximum set. But computing the true maximum is very difficult to do in polynomial time, which is the informal cutoff for "fast enough to be practical."
 
 So this project computes a **maximal** set instead: one that cannot be extended by even one more witness. A maximal set might happen to also be the maximum, but that is not guaranteed. For the purposes of this project, maximal counts as sufficiently large.
 
