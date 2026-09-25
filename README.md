@@ -1,6 +1,6 @@
 # Computational Geometry Project
 
-**Computing a "large" number of independent witness points with respect to vertex guards in a simple polygon.**
+**Computing a maximal set of independent witness points for vertex guards in a simple polygon.**
 
 Final project for **CSE 555: Computational Geometry** at Stony Brook University, taught by Professor Joseph Mitchell, Spring 2024. Written in Java. The project was selected by the professor as one of the best submissions in the class and was awarded a performance bonus.
 
@@ -10,9 +10,8 @@ This README assumes no background in computational geometry. The Background sect
 
 ## Contents
 
-- [Background: the ideas you need first](#background-the-ideas-you-need-first)
+- [Background](#background-the-ideas-you-need-first)
 - [The Problem](#the-problem)
-- [What Does "Large" Mean?](#what-does-large-mean)
 - [How the Algorithm Works](#how-the-algorithm-works)
 - [Using Symmetry to Cut the Running Time](#using-symmetry-to-cut-the-running-time)
 - [Time Complexity](#time-complexity)
@@ -21,7 +20,7 @@ This README assumes no background in computational geometry. The Background sect
 - [Files](#files)
 - [References](#references)
 
-## Background: the ideas you need first
+## Background
 
 ### Polygons and vertices
 
@@ -86,11 +85,7 @@ These two words look almost identical and mean genuinely different things. The d
 
 An analogy: you are seating strangers in a row of nine chairs, with a rule that nobody may sit next to anyone else. Filling seats 1, 3, 5, 7, and 9 is maximum, since 5 people is the best possible. Filling seats 2, 5, and 8 instead is maximal, because no remaining seat is legal, but it only fits 3 people. Both arrangements are stuck, and only one is optimal.
 
-### What Does "Large" Mean?
-
-Ideally we would want the maximum set. But computing the true maximum is very difficult to do in polynomial time, which is the informal cutoff for "fast enough to be practical."
-
-So this project computes a **maximal** set instead: one that cannot be extended by even one more witness. A maximal set might happen to also be the maximum, but that is not guaranteed. For the purposes of this project, maximal counts as sufficiently large.
+Ideally we would want the maximum set. But computing the true maximum is very difficult to do in polynomial time, which is the informal cutoff for "fast enough to be practical." So this project computes a **maximal** set instead: one that cannot be extended by even one more witness. A maximal set might happen to also be the maximum, but that is not guaranteed. For the purposes of this project, maximal counts as sufficiently large.
 
 ## The Problem
 
