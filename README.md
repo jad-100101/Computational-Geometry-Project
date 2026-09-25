@@ -10,7 +10,7 @@ This README assumes no background in computational geometry. The Background sect
 
 ## Contents
 
-- [Background](#background-the-ideas-you-need-first)
+- [Background](#background)
 - [The Problem](#the-problem)
 - [How the Algorithm Works](#how-the-algorithm-works)
 - [Using Symmetry to Cut the Running Time](#using-symmetry-to-cut-the-running-time)
